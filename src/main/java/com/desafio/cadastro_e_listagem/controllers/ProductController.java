@@ -25,7 +25,7 @@ public class ProductController {
         Product newProduct = new Product(data);
         System.out.println(data);
         productRepository.save(newProduct);
-        return ResponseEntity.ok("status ok");
+        return ResponseEntity.ok(newProduct);
     }
 
 }
